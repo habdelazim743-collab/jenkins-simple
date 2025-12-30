@@ -20,7 +20,6 @@ pipeline {
         stage('Build & Push Docker Image') {
             steps {
                 sh '''
-                  cd Simple-Project
                   ansible-playbook ansible-playbook.yml
                 '''
             }
